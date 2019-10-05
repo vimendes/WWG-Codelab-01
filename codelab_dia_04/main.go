@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("--- EXERCÍCIO 01 ---")
 	exercise1()
+
+	fmt.Println("--- EXERCÍCIO 02 ---")
+	exercise2()
 }
 
 func exercise1() {
@@ -26,4 +30,18 @@ func exercise1() {
 		fmt.Println(intArray[i])
 	}
 
+}
+
+func exercise2() {
+	valuesToBeSum := []int{10, 20, 30, 40, 50}
+
+	fmt.Print("Somatoria = ", sum(valuesToBeSum))
+}
+
+func sum(values []int) int {
+	sum := 0
+	for i := 0; i < len(values); i++ {
+		sum += values[i]
+	}
+	return sum
 }
